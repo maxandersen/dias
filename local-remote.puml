@@ -1,0 +1,36 @@
+@startuml
+skinparam handwritten true
+
+caption Locahost with remote server
+
+component "localhost" {
+    component "IDE" {
+
+    }
+
+    storage {
+        storage sourcecode
+    }
+
+}
+
+component remote-server {
+    component "eap"
+
+    storage {
+        storage "war" {
+
+        }
+    }
+}
+
+left to right direction 
+eap --> war : read
+IDE --> eap : connect
+IDE --> war : deploy
+
+top to bottom direction
+IDE --> sourcecode : rwbuild
+
+@enduml
+

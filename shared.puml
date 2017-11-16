@@ -1,0 +1,14 @@
+@startuml
+
+    component "IDE" {
+
+    }
+
+    component "eap"
+
+    storage "filesystem" {
+
+    }
+
+@enduml
+

@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+
+component "localhost" {
+    component "IDE" {
+
+    }
+
+    component "eap"
+
+    storage {
+        storage "war" 
+        storage "sourcecode"
+    }
+
+left to right direction 
+eap --> war : read
+IDE --> eap : connect
+IDE --> war : deploy
+
+top to bottom direction
+IDE --> sourcecode : rwbuild
+
+
+}
+@enduml
+
