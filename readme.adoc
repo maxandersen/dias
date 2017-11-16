@@ -1,0 +1,8 @@
+# Test
+
+image::http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/maxandersen/dias/master/localhost.puml[]
+
+
+
+
+
